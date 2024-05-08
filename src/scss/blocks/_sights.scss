@@ -1,0 +1,572 @@
+.sight {
+    min-height: 721px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16%;
+    align-items: center;
+    margin-bottom: 15%;
+    position: relative;
+    @include tabletMedia {
+        margin-top: -5000px;
+        gap: 0;
+    }
+    @include phoneMedia {
+        margin: 0;
+        gap: 0px;
+        margin-bottom: 0; 
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.sight__text {
+    padding: 20px;
+    z-index: 9;
+    max-width: 632px;
+    min-height: 546px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    transform: translateX(-200px);
+    opacity: 0;
+    @include tabletMedia {
+        background: linear-gradient(
+            180deg,
+            #000000 5.98%,
+            rgba(0, 0, 0, 0.38) 51.04%,
+            #000000 98.19%
+        ),
+        url(../../img/sights/kurgan_boevoy_slavy.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &.anim-2 {
+        transform: translateX(200px);
+        opacity: 0;
+        @include tabletMedia {
+            background: linear-gradient(
+                180deg,
+                #000000 5.98%,
+                rgba(0, 0, 0, 0.38) 51.04%,
+                #000000 98.19%
+            ),
+            url(../../img/sights/byust_general-mayoru.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    &.anim-3 {
+        @include tabletMedia {
+            background: linear-gradient(
+                180deg,
+                #000000 5.98%,
+                rgba(0, 0, 0, 0.38) 51.04%,
+                #000000 98.19%
+            ),
+            url(../../img/sights/kseno.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    &.anim-4 {
+        transform: translateX(200px);
+        opacity: 0;
+        @include tabletMedia {
+            background: linear-gradient(
+                180deg,
+                #000000 5.98%,
+                rgba(0, 0, 0, 0.38) 51.04%,
+                #000000 98.19%
+            ),
+            url(../../img/sights/kamen_s_otpechatkami.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    &.anim-5 {
+        @include tabletMedia {
+            background: linear-gradient(
+                180deg,
+                #000000 5.98%,
+                rgba(0, 0, 0, 0.38) 51.04%,
+                #000000 98.19%
+            ),
+            url(../../img/sights/bratskaya_mogila_borcov.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    &.anim-6 {
+        transform: translateX(200px);
+        opacity: 0;
+        @include tabletMedia {
+            background: linear-gradient(
+                180deg,
+                #000000 5.98%,
+                rgba(0, 0, 0, 0.38) 51.04%,
+                #000000 98.19%
+            ),
+            url(../../img/sights/pamyatnik_bratyam.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    &.anim-7 {
+        @include tabletMedia {
+            background: linear-gradient(
+                180deg,
+                #000000 5.98%,
+                rgba(0, 0, 0, 0.38) 51.04%,
+                #000000 98.19%
+            ),
+            url(../../img/sights/pamyatnik_reshetnikovoy_zoe.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    &.anim-8 {
+        transform: translateX(200px);
+        opacity: 0;
+        @include tabletMedia {
+            background: linear-gradient(
+                180deg,
+                #000000 5.98%,
+                rgba(0, 0, 0, 0.38) 51.04%,
+                #000000 98.19%
+            ),
+            url(../../img/sights/pamyatnik_sergo_ordzhonikidze.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    &.anim-9 {
+        @include tabletMedia {
+            background: linear-gradient(
+                180deg,
+                #000000 5.98%,
+                rgba(0, 0, 0, 0.38) 51.04%,
+                #000000 98.19%
+            ),
+            url(../../img/sights/pamyatnik_pervomu_uchitelyu.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    &.anim-10 {
+        transform: translateX(200px);
+        opacity: 0;
+        @include tabletMedia {
+            background: linear-gradient(
+                180deg,
+                #000000 5.98%,
+                rgba(0, 0, 0, 0.38) 51.04%,
+                #000000 98.19%
+            ),
+            url(../../img/sights/pamyatnik-byust_g.k._ordzhonikidze.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    &.anim-11 {
+        @include tabletMedia {
+            background: linear-gradient(
+                180deg,
+                #000000 5.98%,
+                rgba(0, 0, 0, 0.38) 51.04%,
+                #000000 98.19%
+            ),
+            url(../../img/sights/stela_pavshim.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+@include phoneMedia {
+    .sight {
+        grid-template-columns: 1fr;
+    }
+    .sight__text {
+        max-width: 1040px;
+    }
+}
+
+// .sight__img {
+//     max-width: 598px;
+//     height: 720px;
+//     background-image: url(../../img/sights/kurgan_boevoy_slavy.jpg);
+//     background-position: center;
+//     background-size: cover;
+//     transform: translateX(0);
+//     opacity: 0;
+// }
+.sight__img-1 {
+    max-width: 598px;
+    height: 720px;
+    background-image: url(../../img/sights/kurgan_boevoy_slavy.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(200px);
+    opacity: 0;
+}
+.sight__img-2 {
+    max-width: 598px;
+    height: 720px;
+    background-image: url(../../img/sights/byust_general-mayoru.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-200px);
+    opacity: 0;
+}
+.sight__img-3 {
+    max-width: 598px;
+    height: 720px;
+    background-image: url(../../img/sights/kseno.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(200px);
+    opacity: 0;
+}
+.sight__img-4 {
+    max-width: 598px;
+    height: 720px;
+    background-image: url(../../img/sights/kamen_s_otpechatkami.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-200px);
+    opacity: 0;
+}
+.sight__img-5 {
+    max-width: 598px;
+    height: 720px;
+    background-image: url(../../img/sights/bratskaya_mogila_borcov.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(200px);
+    opacity: 0;
+}
+.sight__img-6 {
+    max-width: 598px;
+    height: 720px;
+    background-image: url(../../img/sights/pamyatnik_bratyam.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-200px);
+    opacity: 0;
+}
+.sight__img-7 {
+    max-width: 598px;
+    height: 720px;
+    background-image: url(../../img/sights/pamyatnik_reshetnikovoy_zoe.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(200px);
+    opacity: 0;
+}
+.sight__img-8 {
+    max-width: 598px;
+    height: 720px;
+    background-image: url(../../img/sights/pamyatnik_sergo_ordzhonikidze.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-200px);
+    opacity: 0;
+}
+.sight__img-9 {
+    max-width: 598px;
+    height: 720px;
+    background-image: url(../../img/sights/pamyatnik_pervomu_uchitelyu.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(200px);
+    opacity: 0;
+}
+.sight__img-10 {
+    max-width: 598px;
+    height: 720px;
+    background-image: url(../../img/sights/pamyatnik-byust_g.k._ordzhonikidze.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-200px);
+    opacity: 0;
+}
+.sight__img-11 {
+    max-width: 598px;
+    height: 720px;
+    background-image: url(../../img/sights/stela_pavshim.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(200px);
+    opacity: 0;
+}
+
+@include tabletMedia {
+    .sight {
+        margin-top: 75px;
+        max-width: 5000px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr
+    }
+    .sight__img-1 {
+        display: none;
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/kurgan_boevoy_slavy.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    .sight__img-2 {display: none;
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/byust_general-mayoru.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    .sight__img-3 {display: none;
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/kseno.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    .sight__img-4 {display: none;
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/kamen_s_otpechatkami.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    .sight__img-5 {display: none;
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/bratskaya_mogila_borcov.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    .sight__img-6 {display: none;
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/pamyatnik_bratyam.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    .sight__img-7 {display: none;
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/pamyatnik_reshetnikovoy_zoe.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    .sight__img-8 {display: none;
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/pamyatnik_sergo_ordzhonikidze.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    .sight__img-9 {display: none;
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/pamyatnik_pervomu_uchitelyu.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    .sight__img-10 {display: none;
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/pamyatnik-byust_g.k._ordzhonikidze.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    .sight__img-11 {display: none;
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/stela_pavshim.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 1200px;
+    //     height: 100vh;
+    //     background: linear-gradient(
+	// 		180deg,
+	// 		#000000 11.98%,
+	// 		rgba(0, 0, 0, 0.38) 51.04%,
+	// 		#000000 92.19%
+	// 	),
+    //     url(../../img/about/pokrvsk.jpg) center;
+    .sight__text {
+        max-width: 1040px;
+        min-height: 546px;
+        display: flex;
+        flex-direction: column;
+        // gap: 27px;
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+
+@include phoneMedia {
+    // .about {
+    //     margin-top: 75px;
+    //     width: 100%;
+    //     grid-template-columns: 1fr;
+    //     position: relative;
+    // }
+    // .about__img {
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: linear-gradient(
+	// 		180deg,
+	// 		#000000 11.98%,
+	// 		rgba(0, 0, 0, 0.38) 51.04%,
+	// 		#000000 92.19%
+	// 	),
+    //     url(../../img/about/pokrvsk.jpg);
+    // }
+    .sight__img-1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+			180deg,
+			#000000 11.98%,
+			rgba(0, 0, 0, 0.38) 51.04%,
+			#000000 92.19%
+		),
+        url(../../img/about/pokrvsk.jpg);
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    .sight__img-2 {
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/byust_general-mayoru.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    .sight__img-3 {
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/kseno.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    .sight__img-4 {
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/kamen_s_otpechatkami.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    .sight__img-5 {
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/bratskaya_mogila_borcov.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    .sight__img-6 {
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/pamyatnik_bratyam.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    .sight__img-7 {
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/pamyatnik_reshetnikovoy_zoe.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    .sight__img-8 {
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/pamyatnik_sergo_ordzhonikidze.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    .sight__img-9 {
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/pamyatnik_pervomu_uchitelyu.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    .sight__img-10 {
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/pamyatnik-byust_g.k._ordzhonikidze.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    .sight__img-11 {
+        max-width: 598px;
+        height: 720px;
+        background-image: url(../../img/sights/stela_pavshim.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: translateX(200px);
+        opacity: 0;
+    }
+}

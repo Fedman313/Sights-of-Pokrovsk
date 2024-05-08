@@ -1,0 +1,167 @@
+.slider {
+    margin-bottom: 15%;
+}
+.slider__img{
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    @include phoneMedia {
+        height: 50%;
+    }
+}
+
+
+
+
+.img-1 {
+    background: linear-gradient(180.00deg, rgba(195, 194, 194, 0),rgba(0, 0, 0, 0.61) 80.153%),url(../../img/sights/kurgan_boevoy_slavy.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.img-2 {
+    background: linear-gradient(180.00deg, rgba(195, 194, 194, 0),rgba(0, 0, 0, 0.61) 80.153%),url(../../img/sights/byust_general-mayoru.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.img-3 {
+    background: linear-gradient(180.00deg, rgba(195, 194, 194, 0),rgba(0, 0, 0, 0.61) 80.153%),url(../../img/sights/kseno.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.img-4 {
+    background: linear-gradient(180.00deg, rgba(195, 194, 194, 0),rgba(0, 0, 0, 0.61) 80.153%),url(../../img/sights/kamen_s_otpechatkami.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.img-5 {
+    background: linear-gradient(180.00deg, rgba(195, 194, 194, 0),rgba(0, 0, 0, 0.61) 80.153%),url(../../img/sights/bratskaya_mogila_borcov.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.img-6 {
+    background: linear-gradient(180.00deg, rgba(195, 194, 194, 0),rgba(0, 0, 0, 0.61) 80.153%),url(../../img/sights/pamyatnik_bratyam.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.img-7 {
+    background: linear-gradient(180.00deg, rgba(195, 194, 194, 0),rgba(0, 0, 0, 0.61) 80.153%),url(../../img/sights/pamyatnik_reshetnikovoy_zoe.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.img-8 {
+    background: linear-gradient(180.00deg, rgba(195, 194, 194, 0),rgba(0, 0, 0, 0.61) 80.153%),url(../../img/sights/pamyatnik_sergo_ordzhonikidze.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.img-9 {
+    background: linear-gradient(180.00deg, rgba(195, 194, 194, 0),rgba(0, 0, 0, 0.61) 80.153%),url(../../img/sights/pamyatnik_pervomu_uchitelyu.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.img-10 {
+    background: linear-gradient(180.00deg, rgba(195, 194, 194, 0),rgba(0, 0, 0, 0.61) 80.153%),url(../../img/sights/pamyatnik-byust_g.k._ordzhonikidze.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.img-11{
+    background: linear-gradient(180.00deg, rgba(195, 194, 194, 0),rgba(0, 0, 0, 0.61) 80.153%),url(../../img/sights/stela_pavshim.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+
+.slider-phone {
+    display: none;
+}
+
+
+.slider__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 42px;
+    max-width: 934px;
+    min-height: 410px;
+    gap: 20px;
+    @include phoneMedia {
+        justify-content: center;
+    }
+}
+.slider-accent-title {
+    padding: 0;
+    &::before {
+        content: '';        
+        background-color: $accent-color;
+        position: absolute;
+        width: 72px;
+        height: 2px;
+        left: -100px;
+        right: 0;
+        top: 10px;
+        bottom: 13px;
+    }
+    &::after {
+        content: '';        
+        background-color: $accent-color;
+        position: absolute;
+        width: 72px;
+        height: 2px;
+        right: 0;
+        left: 400px;
+        top: 10px;
+        bottom: 13px;
+    }
+}
+@include phoneMedia {
+    .slider-accent-title {
+        font-size: 12px;
+        padding: 0;
+        &::before {
+            content: '';        
+            background-color: $accent-color;
+            position: absolute;
+            width: 72px;
+            height: 2px;
+            left: -100px;
+            right: 0;
+            top: 10px;
+            bottom: 13px;
+            display: none;
+        }
+        &::after {
+            content: '';        
+            background-color: $accent-color;
+            position: absolute;
+            width: 72px;
+            height: 2px;
+            right: 0;
+            left: 400px;
+            top: 10px;
+            bottom: 13px;
+            display: none;
+        }
+    }
+}
+
+
+.swiper-scrollbar-drag {
+    display: none;
+}
+.swiper-scrollbar-horizontal {
+    display: none;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: $accent-color;
+}
+
+
+.swiper-pagination-bullet-active {
+    background: $accent-color !important;
+}

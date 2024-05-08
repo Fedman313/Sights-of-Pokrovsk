@@ -1,0 +1,93 @@
+.about {
+    margin-top: 675px;
+    min-height: 721px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.about__img {
+    max-width: 598px;
+    height: 720px;
+    background-image: url(../../img/about/pokrvsk.jpg);
+    transform: translateX(-200px);
+    opacity: 0;
+    background-repeat: no-repeat;
+}
+
+.about__text {
+    padding: 20px;
+    max-width: 632px;
+    min-height: 546px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    transform: translateX(100px);
+    opacity: 0;
+}
+@include phoneMedia {
+    .about {
+        margin-top: 75px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+    .about__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+			180deg,
+			#000000 11.98%,
+			rgba(0, 0, 0, 0.38) 51.04%,
+			#000000 92.19%
+		),
+        url(../../img/about/pokrvsk.jpg);
+    }
+}
+@include tabletMedia {
+    .about {
+        margin-top: 375px;
+        max-width: 5000px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr
+    }
+    .about__img {
+        display: none;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 1200px;
+    //     height: 100vh;
+    //     background: linear-gradient(
+	// 		180deg,
+	// 		#000000 11.98%,
+	// 		rgba(0, 0, 0, 0.38) 51.04%,
+	// 		#000000 92.19%
+	// 	),
+    //     url(../../img/about/pokrvsk.jpg) center;
+    }
+    .about__text {
+        max-width: 1040px;
+        min-height: 546px;
+        display: flex;
+        flex-direction: column;
+        // gap: 27px;
+        transform: translateX(100px);
+        opacity: 0;
+        background: linear-gradient(
+            180deg,
+            #000000 11.98%,
+            rgba(0, 0, 0, 0.38) 51.04%,
+            #000000 92.19%
+        ),
+        url(../../img/about/pokrvsk.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
